@@ -64,7 +64,7 @@ export default function Home() {
       <section className={styles.aboutSection} id="about">
         <h3 className={styles.text}>ჩვენს შესახებ</h3>
         <div className={styles.about}>
-          ჩვენ გთავაზობთ ევაკუატორებების სრულ მომსახურებას 24/7-ზე, მთელი
+          ჩვენ გთავაზობთ ევაკუატორების სრულ მომსახურებას 24/7-ზე, მთელი
           საქართველოს მასშტაბით.
           <br />
           <br />
