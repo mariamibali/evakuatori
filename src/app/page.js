@@ -25,7 +25,7 @@ export default function Home() {
                 <a href="#about">ჩვენს შესახებ</a>
               </li>
               <li className={styles.navItem}>
-                <a href="#location">სად გიპოვოთ?</a>
+                <a href="#location">სად გვიპოვით?</a>
               </li>
             </ul>
           </nav>
