@@ -12,16 +12,56 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Evakuatori",
+  title: "ევაკუატორი",
   description:
-    "Evakuatori - 24/7 towing service across Georgia. Fast, reliable, and affordable roadside assistance. Contact us now for immediate help!",
+    "ევაკუატორი 24 საათი თბილისში და მთელ საქართველოში. სწრაფი, იაფი და უსაფრთხო მომსახურება. დაგვიკავშირდით ახლავე!",
+  keywords: [
+    "ევაკუატორი",
+    "evakuatori",
+    "ამწე მანიპულატორი",
+    "ევაკუატორი თბილისი",
+    "evakuatori tbilisi",
+    "tow truck georgia",
+    "эвакуатор тбилиси",
+  ],
+  openGraph: {
+    title: "ევაკუატორი 24/7-ზე",
+    description: "სწრაფი და იაფი ევაკუატორი თბილისში",
+    url: "https://evakuatorebi.com",
+    siteName: "Evakuatorebi",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ka_GE",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ka">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Evakuatorebi",
+              telephone: "+995555113096",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Tbilisi",
+                addressCountry: "GE",
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   );
