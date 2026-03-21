@@ -39,6 +39,9 @@ export const metadata = {
     locale: "ka_GE",
     type: "website",
   },
+  verification: {
+    google: "GV-nQi2UrGX0T74OVwXazmLlo92Mg-HqH7DlFBOI0U8",
+  },
 };
 
 export default function RootLayout({ children }) {
