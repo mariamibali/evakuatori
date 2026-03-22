@@ -38,7 +38,7 @@
 }
 .hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -48,23 +48,18 @@
   object-fit: cover;
 }
 .heroContent {
-  background-color: #e4e4e4f4;
-  padding: 30px;
+  background-color: #ffffff6e;
   border-radius: 50px;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: all 0.6s ease;
-}
-.hero:hover .heroContent {
-  transform: translateY(0);
-  opacity: 1;
+  padding: 30px;
+  animation: fadeUp 1s ease forwards;
 }
 .heroContent h1 {
+  font-size: clamp(10px, 8vw, 35px);
   margin-bottom: 10px;
   line-height: 1.2;
 }
 .heroContent p {
-  font-size: clamp(15px, 10vw, 20px);
+  font-size: clamp(10px, 5vw, 20px);
   opacity: 0.9;
   margin-bottom: 10px;
 }
@@ -74,13 +69,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 0 20px;
-  width: 100%;
   max-width: 900px;
-}
-.overlay h1 {
-  font-size: clamp(20px, 10vw, 35px);
-  margin-bottom: 10px;
 }
 .wrapper {
   display: flex;
@@ -100,10 +89,11 @@
   text-align: center;
 }
 .about {
-  font-size: clamp(9px, 5vw, 16px);
+  font-size: clamp(9px, 4vw, 16px);
   border-radius: 15px;
   margin-bottom: 15px;
-  color: black;
+  line-height: 1.6;
+  color: #333;
 }
 .services {
   display: flex;
@@ -116,6 +106,7 @@
   justify-content: center;
   gap: 20px;
   align-items: center;
+  color: #333;
   font-size: calamp(7px, 5vw, 15px);
 }
 .service {
@@ -141,11 +132,22 @@
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 .images img {
   border-radius: 15px;
+  transition: 0.3s;
+}
+.images img:hover {
+  transform: scale(1.05);
+}
+.gallerea {
+  text-align: center;
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 600;
+  margin-top: 40px;
 }
 .call {
   text-align: center;
@@ -165,17 +167,17 @@
   margin-top: 15px;
 }
 .button {
-  position: relative;
-  background: #ffd000;
-  color: black;
+  background: linear-gradient(135deg, #ffd000, #ffb300);
+  border-radius: 30px;
   padding: 15px 25px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 .button:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .defaultText {
   display: block;
@@ -246,30 +248,75 @@
   margin-bottom: 40px;
 }
 .texts p {
-  background-color: #ffd000;
-  padding: 10px;
-  border-radius: 20px;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.texts p:hover {
+  transform: translateY(-5px);
 }
 .footer {
-  background: #1a1a1ad8;
-  padding: 30px;
-  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: white;
+  padding: 40px 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.footer a {
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerInfo h3 {
+  margin-bottom: 10px;
+}
+.footerInfo a {
   color: #ffd000;
-  display: block;
-  margin: 10px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footerInfo a:hover {
+  color: white;
 }
 .socials {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  margin-top: 10px;
 }
-.map {
-  color: #fff;
-  margin-bottom: 15px;
+.socials a {
+  background: #ffd000;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.socials a:hover {
+  transform: translateY(-3px);
+}
+.mapContainer {
+  width: 280px;
+}
+.mapFrame {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.7;
 }
 
 @media (max-width: 1024px) {
@@ -295,5 +342,19 @@
   .button {
     font-size: 16px;
     padding: 12px 20px;
+  }
+  .footerContainer {
+    justify-content: center;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

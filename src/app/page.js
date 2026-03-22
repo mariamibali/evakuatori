@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.container}>
-      <header>
+      <header className={styles.header}>
         <div className={styles.headerContainer}>
           <div className={styles.logoContainer}>
             <Image
@@ -33,7 +33,7 @@ export default function Home() {
       </header>
       <section className={styles.hero} id="contact">
         <Image
-          src="/logo.png"
+          src="/7.png"
           alt="Evakuatori"
           fill
           className={styles.heroImage}
@@ -52,12 +52,12 @@ export default function Home() {
         <h2 className={styles.phone}>გამოძახება</h2>
         <p>დაგვიკავშირდი ახლავე და მოვალთ უმოკლეს დროში!</p>
         <div className={styles.buttons}>
-          <a href="tel:+995577304880">
-            <button className={styles.button}>577 30 48 80</button>
-          </a>
-          <p>ან</p>
           <a href="tel:+995555113096">
             <button className={styles.button}>577 11 30 96</button>
+          </a>
+          <p>ან</p>
+          <a href="tel:+995577304880">
+            <button className={styles.button}>577 30 48 80</button>
           </a>
         </div>
       </section>
@@ -141,38 +141,108 @@ export default function Home() {
         </div>
       </section>
       <section>
+        <h3 className={styles.gallerea}>ფოტო გალერეა</h3>
         <div className={styles.images}>
           <Image
-            src="/car (3).jpeg"
-            width={300}
-            height={200}
-            style={{ objectFit: "cover" }}
+            src="/2.jpeg"
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+            alt="work"
+          />
+          <Image
+            src="/6.jpeg"
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
             alt="work"
           />
           <Image
             src="/3.jpeg"
-            width={300}
-            height={200}
-            style={{ objectFit: "cover" }}
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
             alt="work"
           />
           <Image
-            src="/2.jpeg"
-            width={300}
-            height={200}
-            style={{ objectFit: "cover" }}
+            src="/5.jpeg"
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+            alt="work"
+          />
+          <Image
+            src="/car (3).jpeg"
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+            alt="work"
+          />
+          <Image
+            src="/7.png"
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
             alt="work"
           />
           <Image
             src="/4.jpeg"
-            width={300}
-            height={200}
-            style={{ objectFit: "cover" }}
+            width={150}
+            height={110}
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
             alt="work"
           />
-          <Image src="/car (1).jpeg" width={300} height={200} alt="work" />
-          <Image src="/car (4).jpeg" width={300} height={200} alt="work" />
-          <Image src="/1.jpeg" width={300} height={200} alt="work" />
+          <Image
+            src="/car (1).jpeg"
+            width={150}
+            height={110}
+            alt="work"
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+          />
+          <Image
+            src="/car (4).jpeg"
+            width={150}
+            height={110}
+            alt="work"
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+          />
+          <Image
+            src="/1.jpeg"
+            width={150}
+            height={110}
+            alt="work"
+            style={{
+              objectFit: "cover",
+              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+            }}
+          />
         </div>
       </section>
       <section className={styles.advantages}>
@@ -185,30 +255,31 @@ export default function Home() {
         </div>
       </section>
       <footer className={styles.footer} id="location">
-        <div className={styles.mapContainer}>
-          <p className={styles.map}>ჩვენი მისამართი (Map)</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.2780390154836!2d44.85598874385995!3d41.68762564730519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440db7c920f357%3A0xc1cbabf040f1e4b3!2zMzYg4YOZ4YOQ4YOu4YOU4YOX4YOY4YOhIOGDkuGDluGDkOGDouGDmeGDlOGDquGDmOGDmuGDmCwg4YOX4YOR4YOY4YOa4YOY4YOh4YOYIDAxOTA!5e1!3m2!1ska!2sge!4v1773832664234!5m2!1ska!2sge"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            style={{
-              borderRadius: "20px",
-              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
-            }}
-          ></iframe>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerInfo}>
+            <h3>კონტაქტი</h3>
+            <p>📍 თბილისი, საქართველო</p>
+            <a href="tel:+995555113096">📞 555 11 30 96</a>
+            <a href="tel:+995577304880">📞 577 30 48 80</a>
+
+            <div className={styles.socials}>
+              <a href="https://www.tiktok.com/@khatiashvili9" target="_blank">
+                TikTok
+              </a>
+              <a href="https://facebook.com" target="_blank">
+                Facebook
+              </a>
+            </div>
+          </div>
+          <div className={styles.mapContainer}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.3119330710415!2d44.85428357554987!3d41.687672677316215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dc099f6dc83%3A0x822129ffdec29a36!2zRXZha3VhdG9yaS_hg5Thg5Xhg5Dhg5nhg6Phg5Dhg6Lhg53hg6Dhg5g!5e1!3m2!1sen!2sge!4v1774175778960!5m2!1sen!2sge"
+              loading="lazy"
+              className={styles.mapFrame}
+            ></iframe>
+          </div>
         </div>
-        <div className={styles.socials}>
-          <a
-            href="https://www.tiktok.com/@khatiashvili9?lang=en"
-            target="_blank"
-          >
-            TikTok
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            Facebook
-          </a>
-        </div>
-        <p>© 2026 Evakuatori</p>
+        <p className={styles.copy}>© 2026 Evakuatori</p>
       </footer>
       <div className={styles.floating}>
         <a href="tel:+995555113096" className={styles.callBtn}>
