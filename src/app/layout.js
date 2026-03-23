@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ევაკუატორი",
+  title: "ევაკუატორები თბილისში",
   description:
     "ევაკუატორი 24 საათი თბილისში და მთელ საქართველოში. სწრაფი, იაფი და უსაფრთხო მომსახურება. დაგვიკავშირდით ახლავე!",
   keywords: [
@@ -20,6 +20,7 @@ export const metadata = {
     "evakuatorebi",
     "ევაკუატორები თბილისში",
     "ევაკუატორის გამოძახება",
+    "იაფი ევაკუატორი",
     "evakuatori",
     "ამწე მანიპულატორი",
     "amwe manipulatori",
@@ -35,7 +36,7 @@ export const metadata = {
     siteName: "Evakuatorebi",
     images: [
       {
-        url: "/logo.png",
+        url: "https://evakuatorebi.com/cover.jpg",
         width: 1200,
         height: 630,
       },
@@ -45,6 +46,15 @@ export const metadata = {
   },
   verification: {
     google: "GV-nQi2UrGX0T74OVwXazmLlo92Mg-HqH7DlFBOI0U8",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ევაკუატორები 24/7-ზე",
+    description: "იაფი ევაკუატორი თბილისში",
+    images: ["https://evakuatorebi.com/cover.jpg"],
+  },
+  alternates: {
+    canonical: "https://evakuatorebi.com",
   },
 };
 

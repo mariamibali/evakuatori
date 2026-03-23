@@ -125,7 +125,7 @@
   padding: 5px 0;
 }
 .serviceDescription {
-  font-size: clamp(10px, 5vw, 15px);
+  font-size: clamp(7px, 5vw, 15px);
 }
 .images {
   display: flex;
