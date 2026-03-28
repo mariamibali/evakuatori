@@ -25,6 +25,9 @@ export default function Home() {
                 <a href="#about">ჩვენს შესახებ</a>
               </li>
               <li className={styles.navItem}>
+                <a href="#services">სერვისები</a>
+              </li>
+              <li className={styles.navItem}>
                 <a href="#location">სად გვიპოვით?</a>
               </li>
             </ul>
@@ -82,7 +85,7 @@ export default function Home() {
           ყველა ტიპის ავტომობილსა და ტექნიკას. დაგვიკავშირდით ნებისმიერ დროს.
         </div>
       </section>
-      <section className={styles.services}>
+      <section className={styles.services} id="services">
         <h3 className={styles.text}>ჩვენი სერვისები</h3>
         <div className={styles.wrapper}>
           <div className={styles.servicesContainer}>
