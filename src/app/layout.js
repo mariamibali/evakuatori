@@ -13,17 +13,10 @@ export const metadata = {
     "ევაკუატორი 24 საათი თბილისში და მთელ საქართველოში. სწრაფი, იაფი და უსაფრთხო მომსახურება. დაგვიკავშირდით ახლავე!",
   keywords: [
     "ევაკუატორი",
-    "evakuatorebi",
     "ევაკუატორები თბილისში",
-    "ევაკუატორის გამოძახება",
     "იაფი ევაკუატორი",
-    "evakuatori",
-    "ამწე მანიპულატორი",
-    "amwe manipulatori",
-    "ევაკუატორი თბილისი",
-    "evakuatori tbilisi",
-    "tow truck georgia",
-    "эвакуатор тбилиси",
+    "ჯუბა",
+    "ჯუბა თბილისი",
   ],
   alternates: {
     languages: {
@@ -54,7 +47,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ka">
+    <html lang="en">
       <body className={montserrat.variable}>
         {children}
 
