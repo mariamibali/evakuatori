@@ -136,6 +136,12 @@ export default function HomeEN() {
           <br />
           Our service is affordable. Price depends on distance, vehicle type and
           complexity. We serve all types of vehicles.
+          <br />
+          <br />
+          Our tow truck service operates 24 hours a day in Tbilisi and all
+          regions of Georgia. We provide fast roadside assistance, car towing,
+          and vehicle transportation for all types of cars. If your vehicle
+          breaks down or you need urgent help, call us anytime.
         </div>
       </section>
       <section className={styles.services} id="services">
@@ -292,6 +298,15 @@ export default function HomeEN() {
             }}
           />
         </div>
+        <p style={{ display: "none" }}>
+          Professional 24/7 tow truck and roadside assistance in Tbilisi and
+          across Georgia. Fast response, affordable prices, and safe vehicle
+          transportation.
+        </p>
+        <p style={{ display: "none" }}>
+          Tow truck service in Tbilisi Georgia. 24/7 roadside assistance, car
+          towing, vehicle transport, emergency help.
+        </p>
       </section>
       <footer className={styles.footer} id="location">
         <div className={styles.footerContainer}>
