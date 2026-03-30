@@ -1,17 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
+  metadataBase: new URL("https://evakuatorebi.com"),
   title: "ევაკუატორები თბილისში",
   description:
     "ევაკუატორი 24 საათი თბილისში და მთელ საქართველოში. სწრაფი, იაფი და უსაფრთხო მომსახურება. დაგვიკავშირდით ახლავე!",
@@ -29,6 +25,13 @@ export const metadata = {
     "tow truck georgia",
     "эвакуатор тбилиси",
   ],
+  alternates: {
+    languages: {
+      "ka-GE": "/",
+      en: "/en",
+      "x-default": "/",
+    },
+  },
   openGraph: {
     title: "ევაკუატორი 24/7-ზე",
     description: "სწრაფი და იაფი ევაკუატორი თბილისში",
@@ -47,22 +50,14 @@ export const metadata = {
   verification: {
     google: "GV-nQi2UrGX0T74OVwXazmLlo92Mg-HqH7DlFBOI0U8",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "ევაკუატორები 24/7-ზე",
-    description: "იაფი ევაკუატორი თბილისში",
-    images: ["https://evakuatorebi.com/cover.jpg"],
-  },
-  alternates: {
-    canonical: "https://evakuatorebi.com",
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ka">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={montserrat.variable}>
         {children}
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

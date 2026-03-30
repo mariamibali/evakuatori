@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Home() {
-  const pathname = usePathname();
+export default function HomeEN() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <main className={styles.container}>
@@ -16,12 +16,12 @@ export default function Home() {
           <div className={styles.logoContainer}>
             <Image
               src="/logo.png"
-              alt="Evakuatori"
+              alt="Tow Truck"
               width={50}
               height={50}
               style={{ borderRadius: "50%", marginTop: "5px" }}
             />
-            <h1 className={styles.logo}>ევაკუატორი</h1>
+            <h1 className={styles.logo}>Tow Truck</h1>
           </div>
           <div className={styles.navContainer}>
             <div className={styles.languageSwitcher}>
@@ -43,22 +43,22 @@ export default function Home() {
               <ul className={`${styles.navList} ${open ? styles.active : ""}`}>
                 <li className={styles.navItem}>
                   <a href="#contact" onClick={() => setOpen(false)}>
-                    კონტაქტი
+                    Contact
                   </a>
                 </li>
                 <li className={styles.navItem}>
                   <a href="#about" onClick={() => setOpen(false)}>
-                    ჩვენს შესახებ
+                    About
                   </a>
                 </li>
                 <li className={styles.navItem}>
                   <a href="#services" onClick={() => setOpen(false)}>
-                    სერვისები
+                    Services
                   </a>
                 </li>
                 <li className={styles.navItem}>
                   <a href="#location" onClick={() => setOpen(false)}>
-                    სად გვიპოვით?
+                    Location
                   </a>
                 </li>
               </ul>
@@ -72,16 +72,16 @@ export default function Home() {
               <span></span>
               <ul className={`${styles.menu} ${open ? styles.active : ""}`}>
                 <li>
-                  <a href="#contact">კონტაქტი</a>
+                  <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="#about">ჩვენს შესახებ</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#services">სერვისები</a>
+                  <a href="#services">Services</a>
                 </li>
                 <li>
-                  <a href="#location">სად გვიპოვით?</a>
+                  <a href="#location">Location</a>
                 </li>
               </ul>
             </div>
@@ -92,114 +92,104 @@ export default function Home() {
         <Image
           src="/7.png"
           loading="eager"
-          alt="Evakuatori"
+          alt="Tow Truck"
           fill
           className={styles.heroImage}
         />
         <div className={styles.overlay}>
           <div className={styles.heroContent}>
-            <h1>ევაკუატორები 24/7-ზე</h1>
-            <p>• მთელი საქართველოს მასშტაბით •</p>
+            <h1>Tow Truck 24/7</h1>
+            <p>• All across Georgia •</p>
             <a href="tel:+995555113096">
-              <button className={styles.button}>📞 დარეკე ახლავე</button>
+              <button className={styles.button}>📞 Call Now</button>
             </a>
           </div>
         </div>
       </section>
       <section className={styles.call}>
-        <h2 className={styles.phone}>გამოძახება</h2>
-        <p>დაგვიკავშირდი ახლავე და მოვალთ უმოკლეს დროში!</p>
+        <h2 className={styles.phone}>Call Service</h2>
+        <p>Contact us now and we will arrive as quickly as possible!</p>
         <div className={styles.buttons}>
           <a href="tel:+995555113096">
-            <button className={styles.button}>577 11 30 96</button>
+            <button className={styles.button}>555 11 30 96</button>
           </a>
-          <p>ან</p>
+          <p>or</p>
           <a href="tel:+995577304880">
             <button className={styles.button}>577 30 48 80</button>
           </a>
         </div>
       </section>
       <section className={styles.aboutSection} id="about">
-        <h3 className={styles.text}>ჩვენს შესახებ</h3>
+        <h3 className={styles.text}>About Us</h3>
         <div className={styles.about}>
-          ჩვენ გთავაზობთ ევაკუატორების სრულ მომსახურებას 24/7-ზე, მთელი
-          საქართველოს მასშტაბით.
+          We provide full towing services 24/7 across Georgia.
           <br />
           <br />
-          ჩვენი გუნდი გამოირჩევა გამოცდილი მძღოლებითა და სწრაფი რეაგირებით. ჩვენ
-          უზრუნველვყოფთ თქვენი ავტომობილისა თუ ტექნიკის უსაფრთხო და
-          პროფესიონალურ გადაზიდვას. <br />
+          Our team consists of experienced drivers and fast response service. We
+          ensure safe and professional transportation of your vehicle.
           <br />
-          გვყავს სხვადასხვა ტიპის ევაკუატორები - პატარა, საშუალო და დიდი ზომის,
-          მათ შორის ამწე-მანიპულატორი სისტემით აღჭურვილი, რომელიც გამოიყენება
-          ტვირთის გადასატანად, რთულ სიტუაციებში, როგორიცაა ავარიის შემდეგ
-          ამოყვანა ან მიუდგომელი ადგილებიდან ტრანსპორტირება. <br />
           <br />
-          ჩვენი სერვისი ხელმისაწვდომია მისაღებ ფასად. ფასი დამოკიდებულია
-          გადაყვანის მანძილზე, ავტომობილის ზომაზე და სირთულეზე. ვემსახურებით
-          ყველა ტიპის ავტომობილსა და ტექნიკას. დაგვიკავშირდით ნებისმიერ დროს.
+          We have different types of tow trucks - small, medium and large,
+          including crane-equipped trucks for difficult situations such as
+          accidents or inaccessible locations.
+          <br />
+          <br />
+          Our service is affordable. Price depends on distance, vehicle type and
+          complexity. We serve all types of vehicles.
         </div>
       </section>
       <section className={styles.services} id="services">
-        <h3 className={styles.text}>ჩვენი სერვისები</h3>
+        <h3 className={styles.text}>Our Services</h3>
         <div className={styles.wrapper}>
           <div className={styles.servicesContainer}>
             <Image
               src="/yellow.png"
-              alt="Evakuatori"
+              alt="Tow Truck"
               width={60}
               height={60}
               className={styles.car}
             />
             <div className={styles.service}>
-              <p className={styles.card}>მცირე ზომის ავტომობილების გადაყვანა</p>
+              <p className={styles.card}>Small car towing</p>
               <p className={styles.serviceDescription}>
-                გადაგვყავს მსუბუქი ავტომობილები სწრაფად და უსაფრთხოდ, მთელი
-                საქართველოს მასშტაბით.
+                Fast and safe transportation of light vehicles.
               </p>
             </div>
           </div>
           <div className={styles.servicesContainer}>
             <Image
               src="/green.png"
-              alt="Evakuatori"
+              alt="Tow Truck"
               width={60}
               height={60}
               className={styles.car}
             />
             <div className={styles.service}>
-              <p className={styles.card}>
-                საშუალო და დიდი ავტომობილების გადაყვანა
-              </p>
+              <p className={styles.card}>Medium & large vehicles</p>
               <p className={styles.serviceDescription}>
-                მოვემსახურებით მიკროავტობუსებსა და საშუალო ზომის ტექნიკას
-                სპეციალური ევაკუატორით.
+                We handle vans and medium-sized equipment.
               </p>
             </div>
           </div>
           <div className={styles.servicesContainer}>
             <Image
               src="/red.png"
-              alt="Evakuatori"
+              alt="Tow Truck"
               width={60}
               height={60}
               className={styles.car}
             />
             <div className={styles.service}>
-              <p className={styles.card}>
-                მძიმე ტექნიკისთვის ამწე-მანიპულატორი
-              </p>
+              <p className={styles.card}>Crane tow truck</p>
               <p className={styles.serviceDescription}>
-                გვყავს დიდი ევაკუატორი ამწე-მანიპულატორით, რომელიც გამოიყენება
-                დაზიანებული მანქანის უსაფრთხოდ დატვირთვისთვის და ასევე ტვირთის
-                გადასატანად.
+                For damaged cars and heavy transport tasks.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h3 className={styles.gallerea}>ფოტო გალერეა</h3>
+        <h3 className={styles.gallerea}>Our work</h3>
         <div className={styles.images}>
           <Image
             src="/2.jpeg"
@@ -303,23 +293,13 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={styles.advantages}>
-        <h4>რატომ ჩვენ?</h4>
-        <div className={styles.texts}>
-          <p>✔ 1000+ კმაყოფილი კლიენტი</p>
-          <p>✔ მისაღები ფასები</p>
-          <p>✔ მომსახურება 24/7-ზე </p>
-          <p>✔ სწრაფი რეაგირება</p>
-        </div>
-      </section>
       <footer className={styles.footer} id="location">
         <div className={styles.footerContainer}>
           <div className={styles.footerInfo}>
-            <h3>კონტაქტი</h3>
-            <p>📍 თბილისი, საქართველო</p>
+            <h3>Contact</h3>
+            <p>📍 Tbilisi, Georgia</p>
             <a href="tel:+995555113096">📞 555 11 30 96</a>
             <a href="tel:+995577304880">📞 577 30 48 80</a>
-
             <div className={styles.socials}>
               <a href="https://www.tiktok.com/@khatiashvili9" target="_blank">
                 TikTok
@@ -337,20 +317,8 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-        <p className={styles.copy}>© 2026 Evakuatori</p>
+        <p className={styles.copy}>© 2026 Tow Truck</p>
       </footer>
-      <div className={styles.floating}>
-        <a href="tel:+995555113096" className={styles.callBtn}>
-          📞
-        </a>
-        <a
-          href="https://wa.me/995555113096"
-          target="_blank"
-          className={styles.whatsappBtn}
-        >
-          💬
-        </a>
-      </div>
     </main>
   );
 }
