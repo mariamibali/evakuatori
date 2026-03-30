@@ -24,21 +24,6 @@ export default function HomeEN() {
             <h1 className={styles.logo}>Tow Truck</h1>
           </div>
           <div className={styles.navContainer}>
-            <div className={styles.languageSwitcher}>
-              <Link
-                href="/"
-                className={`${styles.lang} ${pathname === "/" ? styles.activeLang : ""}`}
-              >
-                ქარ
-              </Link>
-
-              <Link
-                href="/en"
-                className={`${styles.lang} ${pathname === "/en" ? styles.activeLang : ""}`}
-              >
-                EN
-              </Link>
-            </div>
             <nav className={styles.nav}>
               <ul className={`${styles.navList} ${open ? styles.active : ""}`}>
                 <li className={styles.navItem}>
@@ -63,6 +48,21 @@ export default function HomeEN() {
                 </li>
               </ul>
             </nav>
+            <div className={styles.languageSwitcher}>
+              <Link
+                href="/"
+                className={`${styles.lang} ${pathname === "/" ? styles.activeLang : ""}`}
+              >
+                ქარ
+              </Link>
+
+              <Link
+                href="/en"
+                className={`${styles.lang} ${pathname === "/en" ? styles.activeLang : ""}`}
+              >
+                EN
+              </Link>
+            </div>
             <div
               className={`${styles.burger} ${open ? styles.open : ""}`}
               onClick={() => setOpen(!open)}

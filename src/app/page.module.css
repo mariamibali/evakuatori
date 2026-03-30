@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .navList {
   display: flex;
@@ -90,7 +91,7 @@
   background: rgba(0, 0, 0, 0.1);
 }
 .activeLang {
-  background: #ffb300;
+  background: #ffd000;
   font-weight: 600;
 }
 .logoContainer {
