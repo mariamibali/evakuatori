@@ -340,11 +340,11 @@ export default function Home() {
         <p className={styles.copy}>© 2026 Evakuatori</p>
       </footer>
       <div className={styles.floating}>
-        <a href="tel:+995555113096" className={styles.callBtn}>
+        <a href="tel:+995577334880" className={styles.callBtn}>
           📞
         </a>
         <a
-          href="https://wa.me/995555113096"
+          href="https://wa.me/995577334880"
           target="_blank"
           className={styles.whatsappBtn}
         >

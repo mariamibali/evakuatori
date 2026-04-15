@@ -100,7 +100,7 @@ export default function HomeEN() {
           <div className={styles.heroContent}>
             <h1>Tow Truck 24/7</h1>
             <p>• All across Georgia •</p>
-            <a href="tel:+995555113096">
+            <a href="tel:+995577334880">
               <button className={styles.button}>📞 Call Now</button>
             </a>
           </div>
@@ -334,6 +334,18 @@ export default function HomeEN() {
         </div>
         <p className={styles.copy}>© 2026 Tow Truck</p>
       </footer>
+      <div className={styles.floating}>
+        <a href="tel:+995577334880" className={styles.callBtn}>
+          📞
+        </a>
+        <a
+          href="https://wa.me/995577334880"
+          target="_blank"
+          className={styles.whatsappBtn}
+        >
+          💬
+        </a>
+      </div>
     </main>
   );
 }
