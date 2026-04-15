@@ -110,12 +110,12 @@ export default function HomeEN() {
         <h2 className={styles.phone}>Call Service</h2>
         <p>Contact us now and we will arrive as quickly as possible!</p>
         <div className={styles.buttons}>
-          <a href="tel:+995555113096">
-            <button className={styles.button}>555 11 30 96</button>
+          <a href="tel:+995577334880">
+            <button className={styles.button}>577 33 48 80</button>
           </a>
           <p>or</p>
-          <a href="tel:+995577304880">
-            <button className={styles.button}>577 30 48 80</button>
+          <a href="tel:+995555113096">
+            <button className={styles.button}>555 11 30 96</button>
           </a>
         </div>
       </section>
@@ -314,7 +314,7 @@ export default function HomeEN() {
             <h3>Contact</h3>
             <p>📍 Tbilisi, Georgia</p>
             <a href="tel:+995555113096">📞 555 11 30 96</a>
-            <a href="tel:+995577304880">📞 577 30 48 80</a>
+            <a href="tel:+995577334880">📞 577 33 48 80</a>
             <div className={styles.socials}>
               <a href="https://www.tiktok.com/@khatiashvili9" target="_blank">
                 TikTok

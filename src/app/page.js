@@ -100,7 +100,7 @@ export default function Home() {
           <div className={styles.heroContent}>
             <h1>ევაკუატორები 24/7-ზე</h1>
             <p>• მთელი საქართველოს მასშტაბით •</p>
-            <a href="tel:+995555113096">
+            <a href="tel:+995577334880">
               <button className={styles.button}>📞 დარეკე ახლავე</button>
             </a>
           </div>
@@ -110,12 +110,12 @@ export default function Home() {
         <h2 className={styles.phone}>გამოძახება</h2>
         <p>დაგვიკავშირდი ახლავე და მოვალთ უმოკლეს დროში!</p>
         <div className={styles.buttons}>
-          <a href="tel:+995555113096">
-            <button className={styles.button}>577 11 30 96</button>
+          <a href="tel:+995577334880">
+            <button className={styles.button}>577 33 48 80</button>
           </a>
           <p>ან</p>
-          <a href="tel:+995577304880">
-            <button className={styles.button}>577 30 48 80</button>
+          <a href="tel:+995555113096">
+            <button className={styles.button}>555 11 30 96</button>
           </a>
         </div>
       </section>
@@ -318,7 +318,7 @@ export default function Home() {
             <h3>კონტაქტი</h3>
             <p>📍 თბილისი, საქართველო</p>
             <a href="tel:+995555113096">📞 555 11 30 96</a>
-            <a href="tel:+995577304880">📞 577 30 48 80</a>
+            <a href="tel:+995577334880">📞 577 33 48 80</a>
 
             <div className={styles.socials}>
               <a href="https://www.tiktok.com/@khatiashvili9" target="_blank">
